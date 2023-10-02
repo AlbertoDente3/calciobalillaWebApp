@@ -1,4 +1,5 @@
 import "./App.css";
+import ArticlesComponent from "./layoutAreas/ArticlesComponent";
 import ScooreBoardComponent from "./layoutAreas/ScoreboardComponent";
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
       </div>
 
       <div id="lista-articoli">
-        <div className="articolo"> articolo</div>
+        <div className="articolo">
+          <ArticlesComponent />
+        </div>
       </div>
     </div>
   );

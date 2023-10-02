@@ -5,25 +5,25 @@ import "./../style/result.css";
 
 interface iResultType {
   idPartita: string;
-  homePoints:string,
-  awayPoints:string
+  homePoints?:string,
+  awayPoints?:string
 }
 interface iResultTypeProps {
-  results: iResultType;
+  result: iResultType;
 }
 
-export default function ResultComponent({ results }: iResultTypeProps) {
+export default function ResultComponent({ result }: iResultTypeProps) {
   return (
     <div className="wrapper-result">
       <div className="contenitore-squadra squadra-casa">
         <ImageComponent />
         <ImageComponent />
 
-        <div className="home-result"> {results.homePoints} </div>
+        <div className="home-result"> {result.homePoints} </div>
       </div>
-      <div className="separatore"> - </div>
+      <div className="separatore"> VS </div>
       <div className="contenitore-squadra contenitore-squadra-trasferta">
-        <div className="away-result"> {results.awayPoints} </div>
+        <div className="away-result"> {result.awayPoints} </div>
         <ImageComponent />
         <ImageComponent />
       </div>
