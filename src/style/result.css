@@ -1,0 +1,27 @@
+.wrapper-result {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: solid green;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contenitore-squadra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.separatore{
+    padding: 0 5px;
+}

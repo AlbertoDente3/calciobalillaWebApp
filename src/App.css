@@ -1,0 +1,39 @@
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
+
+#wrapper-app{
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+
+  grid-template-rows: 30px min-content 1fr;
+}
+
+#wrapper-app * {
+  /* border: solid red; */
+  box-sizing: border-box;
+}
+
+#lista-articoli{
+  padding: 100px 50px;
+  overflow: auto;
+}
+
+#lista-partite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partita{
+  border: solid green;
+  width: 100px;
+}
+
+.articolo{
+  height: 10000px;
+}
