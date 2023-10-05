@@ -1,8 +1,9 @@
 import React from "react";
 import ResultComponent from "../components/ResultComponent";
-import './../style/scoreboard.css'
+import "./../style/scoreboard.css";
 
 export default function ScoreboardComponent() {
+  
   const fooObjectResults = [
     {
       idPartita: "2",
@@ -26,9 +27,16 @@ export default function ScoreboardComponent() {
 
   return (
     <div id="scoreboard-wrapper">
-      {fooObjectResults.map((result) => {
-        return <ResultComponent result={result} />;
-      })}
+      <div className="results-wrapper">
+        {fooObjectResults.map((result) => {
+          return <ResultComponent result={result} />;
+        })}
+      </div>
+      <div className="results-wrapper">
+        {fooObjectResults.map((result) => {
+          return <ResultComponent result={result} />;
+        })}
+      </div>
     </div>
   );
 }
