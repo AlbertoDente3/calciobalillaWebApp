@@ -3,29 +3,36 @@
   flex-direction: column;
   box-sizing: border-box;
   border: solid pink;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .article-header {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 50% 50%;
   grid-template-areas:
     "img autore"
     "img sottonota";
-    column-gap: 10px;
+  column-gap: 10px;
+  background-color: brown;
+  padding: 10px;
 }
 
-.immagine-profilo{
-    grid-area: img;
+.immagine-profilo {
+  grid-area: img;
 }
 
-.nome-autore-articolo{
-
-    grid-area: autore;
-
+.nome-autore-articolo {
+  grid-area: autore;
 }
 
-.sotto-nota-articolo{
-    grid-area: sottonota;
+.sotto-nota-articolo {
+  grid-area: sottonota;
 }
 
+.body {
+  padding: 15px;
+  padding-top: 5px;
+}

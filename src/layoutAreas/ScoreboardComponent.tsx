@@ -7,8 +7,6 @@ export default function ScoreboardComponent() {
   const fooObjectResults = [
     {
       idPartita: "2",
-      homePoints: "1",
-      awayPoints: "0",
     },
     {
       idPartita: "2",
@@ -17,8 +15,6 @@ export default function ScoreboardComponent() {
     },
     {
       idPartita: "2",
-      homePoints: "1",
-      awayPoints: "0",
     },
     {
       idPartita: "2",
